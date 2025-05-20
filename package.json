@@ -1,12 +1,12 @@
 {
-    "name": "server",
+    "name": "iss-backend",
     "version": "0.1.2",
     "private": true,
-    "description": "Server",
+    "description": "ISS Backend",
     "main": "build/index.js",
     "scripts": {
         "build": "tsc",
-        "dev": "nodemon src/index.ts",
+        "dev": "npx prisma generate && nodemon src/index.ts",
         "start": "node build/index.js",
         "test": "jest --watchAll",
         "gen": "npx prisma generate",
